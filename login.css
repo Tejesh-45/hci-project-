@@ -1,0 +1,234 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Background */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("images/beans.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Header */
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Styles */
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    
+}
+
+.header .icons a{
+    color:#fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    
+    
+    margin-left: 20rem;
+}
+.header .icons div:hover{
+    color:#fff;
+    margin-right: 40px; 
+}
+/* Hero Section Styles */
+.hero {
+    background-image: url("images/cofee1.jpg"); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+#login {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    margin-top: 60px; /* Adjust for slim header spacing */
+}
+
+#login h2 {
+    color: #ffbb33; /* A warm accent color */
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Form Label */
+form label {
+    display: block;
+    color: #0e0d0d;
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+
+form label {
+    display: block;
+    color: #ffffff; /* Updated for better contrast with the background */
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+/* Input Wrapper with Square Background */
+.login-form {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 15px; /* Adds spacing inside the square */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+    border-radius: 8px; /* Rounded corners for the square */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Depth effect */
+}
+/* Input Fields */
+/* Input Fields */
+form input[type="text"],
+form input[type="password"],
+form input[type="email"] {
+ width: 100%;
+padding: 12px;
+margin-bottom: 20px;
+background-color: rgba(255, 255, 255, 0.9);
+border: 2px solid #ffbb33; /* Add a visible border */
+border-radius: 4px;
+font-size: 16px;
+color: #333;
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Focus Effect for Input Fields */
+form input[type="text"]:focus,
+form input[type="password"]:focus,
+form input[type="email"]:focus {
+outline: none;
+background-color: #fff;
+border: 2px solid #ff8800; /* Highlight border color on focus */
+box-shadow: 0 0 8px rgba(255, 136, 0, 0.5); /* Glowing effect */
+}
+
+
+/* Button Styling */
+button {
+    width: auto;
+    padding: 10px 20px;
+    background-color: #ffbb33;
+    border: none;
+    border-radius: 4px;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e6a228;
+}
+
+/* Confirmation Message */
+.confirmation-message {
+    display: none;
+    background-color: #4caf50;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 20px;
+}

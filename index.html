@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="hci.css">
+</head>
+<body>
+    <section id="home" class="Home">
+    <header>
+        <div class="container" id="home">
+            <div class="logo">
+                <h1>Freshers cafe</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#review">Review</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="login.html">Sign-Up</a></li>
+                    <li><a href="cart.html">cart</a></li>
+                    <li><a href="#blogs">blogs</a></li>
+                </ul>
+            </nav>
+            
+            <div class="icons">
+                <a href="cart.html" style="color: inherit;">
+                    <div class="fas fa-shopping-cart" id="cart-btn"></div>
+                </a>
+                
+                
+                <div class="dropdown">
+                    <a href="javascript:void(0);" id="menu-btn" style="color: inherit;">
+                        <div class="fas fa-bars"></div>
+                    </a>
+                    <div class="dropdown-content" id="dropdown-menu">
+                        <a href="index.html#home">home</a>
+                        <a href="index.html#products">Products</a>
+                        <a href="index.html#about">About Us</a>
+                        <a href="index.html#contact">Contact Us</a>
+                        <a href="login.html">sign-up</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+    </header>
+    </section>
+
+    <section class="hero">
+        <div class="overlay">
+            <div class="hero-content">
+                <h2>FRESH COFFEE IN THE MORNING</h2>
+                <p>"Find Your Flavor, Discover Your Moment  Crafted for Coffee Lovers, Made for Those Who Cherish Quality in Every Cup"</p>
+                <a href="#products" class="btn">Get It Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <h3>A little cup of happiness.</h3>
+            <p>Welcome to <strong>Fresher's Cafe</strong>! We are passionate about crafting delicious coffee from high-quality, ethically sourced beans. Our goal is to bring you a fresh and flavorful cup, every time.</p>
+            <p>Whether you're grabbing a quick coffee on the go or looking to relax with your favorite brew, we’re here to make your coffee experience special. Thank you for being part of our journey!</p>
+            <a href="#" class="btn" id="load-more-btn">Learn More</a> <!-- Assigning an ID to target it with JavaScript -->
+             <div id="extra-content"></div>
+        </div>
+        <div class="about-image">
+            
+        </div>
+    </section>
+    
+    <div class="extra-content">
+        <!-- This is where additional content will load when "Learn More" is clicked -->
+    </div>
+    
+    </section>
+    
+    <section id="products" class="special-products-section">
+        
+        <h2>Products</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="images/beans1.jpg" alt="Black Coffee">
+                <h3>Arabica</h3>
+                <p>₹499.99</p>
+                <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/beans1.jpg" alt="Espresso">
+                <h3>Robusta</h3>
+                <p>₹599.99</p>
+                <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/beans1.jpg" alt="Cappuccino">
+                <h3>Kona Coffee</h3>
+                <p>₹699.99</p>
+                <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/beans1.jpg" alt="Latte">
+                <h3>Panama Geisha</h3>
+                <p>₹659.99</p>
+                <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+            </div>
+            <!-- Add more products as needed -->
+        </div>
+        <div class="product-grid">
+            <div class="product">
+                <img src="images/beans1.jpg" alt="Black Coffee">
+                <h3>Colombian Supremo</h3>
+                <p>₹499.99</p>
+                <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/beans1.jpg" alt="Espresso">
+                <h3>Tanzania Peaberry</h3>
+                <p>₹599.99</p>
+                <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/beans1.jpg" alt="Cappuccino">
+                <h3>Ethiopian harror</h3>
+                <p>₹699.99</p>
+                <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/beans1.jpg" alt="Latte">
+                <h3>Latte</h3>
+                <p>₹659.99</p>
+                <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+            </div>
+            <!-- Add more products as needed -->
+        </div>
+    </section>
+
+    <section id="products" class="special-products-section">
+        
+        <h2><span>Dine-In-Special</span> Coffee</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="images/Black Coffee.jpg" alt="Black Coffee">
+                <h3>Black Coffee</h3>
+                <p>₹499.99</p>
+                <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/expresso.jpg" alt="Espresso">
+                <h3>Espresso</h3>
+                <p>₹599.99</p>
+                <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/cappucino.jpg" alt="Cappuccino">
+                <h3>Cappuccino</h3>
+                <p>₹699.99</p>
+                <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/latte.jpg" alt="Latte">
+                <h3>Latte</h3>
+                <p>₹659.99</p>
+                <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+            </div>
+            <!-- Add more products as needed -->
+        </div>
+        
+        </section>
+    
+    <!-- New Review Section -->
+<section id="review" class="review-section">
+    <h2>CUSTOMERS <span>REVIEW</span></h2>
+    <div class="review-grid">
+        <div class="review">
+            <img src="images/user1.jpg" alt="Emily's Profile Picture" class="review-image">
+            <h3>Emily P.</h3>
+            <p class="stars">⭐⭐⭐⭐⭐</p>
+            <p>"I love this app! It makes ordering my coffee so convenient, especially during my busy mornings. The customization options are great, and I love being able to save my favorite orders for quick access. Plus, the rewards program is a fantastic bonus!"</p>
+        </div>
+        <div class="review">
+            <img src="images/user2.jpg" alt="John's Profile Picture" class="review-image">
+            <h3>John M.</h3>
+            <p class="stars">⭐⭐⭐⭐⭐</p>
+            <p>"This app has really improved my coffee experience. It's easy to navigate and allows me to order ahead, which saves me a lot of time. My only issue is that sometimes the GPS doesn’t pick up my location properly, so I have to manually enter it."</p>
+        </div>
+        <div class="review">
+            <img src="images/abhi.jpg" alt="Sarah's Profile Picture" class="review-image">
+            <h3>Ram</h3>
+            <p class="stars">⭐⭐⭐⭐⭐</p>
+            <p>"Fantastic app! I've been using it for a few months now, and it’s never let me down. The real-time updates on my order status are super helpful, and the app is user-friendly. I've also earned a few free coffees through the loyalty program, which is a great perk!"</p>
+        </div>
+    </div>
+</section>
+
+
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+             <label for="Phone">Phone-no</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+    
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="confirmation" id="confirmation-message">Your message has been sent successfully!</div>
+        
+    </section>
+    <section id="blogs" class="blogs-section">
+        <h2>Our Latest <span>Blogs</span></h2>
+        <div class="blog-grid">
+            <div class="blog-post">
+                <img src="images/blog1" alt="Blog Post 1">
+                <h3>The Art of Brewing the Perfect Coffee</h3>
+                <p class="blog-preview">
+                    Discover the secrets behind brewing a cup of coffee that delights your senses. From bean selection to brewing methods...
+                </p>
+                <p class="blog-full-text" style="display: none;">
+                    Discover the secrets behind brewing a cup of coffee that delights your senses. From selecting the right beans to mastering
+                    brewing techniques, every step matters. Join us on a deep dive into the art and science of coffee making.
+                </p>
+                <button class="btn read-more-btn">Read More</button>
+            </div>
+            <div class="blog-post">
+                <img src="images/cofee2" alt="Blog Post 2">
+                <h3>5 Health Benefits of Drinking Coffee</h3>
+                <p class="blog-preview">
+                    Did you know coffee is more than just a morning pick-me-up? Learn how your favorite drink can improve your health...
+                </p>
+                <p class="blog-full-text" style="display: none;">
+                    Did you know coffee is more than just a morning pick-me-up? Studies show it can boost metabolism, improve mental
+                    alertness, and even protect against certain diseases. Dive into the top five health benefits of coffee.
+                </p>
+                <button class="btn read-more-btn">Read More</button>
+            </div>
+            <div class="blog-post">
+                <img src="images/cofee3" alt="Blog Post 3">
+                <h3>Exploring the World's Best Coffee Beans</h3>
+                <p class="blog-preview">
+                    Join us on a journey to explore the finest coffee beans from around the globe, and find out what makes them so special...
+                </p>
+                <p class="blog-full-text" style="display: none;">
+                    Join us on a journey to explore the finest coffee beans from around the globe, including Ethiopia, Colombia, and Kona.
+                    Discover what makes each bean unique and how to enjoy them to their fullest.
+                </p>
+                <button class="btn read-more-btn">Read More</button>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-content">
+        <h3>Fresher's Cafe</h3>
+        <p>Thank you for visiting Freshers cafe! We look forward to serving you the best coffee experience.</p>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+
+
+    
+    <div class="footer-bottom">
+        <p>&copy; 2024 Fresher's Cafe. All Rights Reserved.</p>
+    </div>
+</footer>
+
+    
+        <script src="contact.js"></script>
+    
+        <script src="cart.js"></script>
+        <script src="menu.js"></script>
+        
+</body>
+</html>

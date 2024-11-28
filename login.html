@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Sign-Up - Coffee Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="login.css">
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Fresher's Cafe</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#products">Products</a></li>
+                    <li><a href="index.html#review">Review</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="user-auth">
+        <div class="toggle-buttons">
+            <button id="signup-btn" class="active" onclick="showForm('signup')">Sign-Up</button>
+            <button id="login-btn" onclick="showForm('login')">Login</button>
+        </div>
+
+        <!-- Sign-Up Form -->
+        <div id="signup-form" class="form-container">
+            <h2>Sign-Up</h2>
+            <form>
+                <label for="signup-username">Username:</label>
+                <input type="text" id="signup-username" name="username" required>
+
+                <label for="signup-password">Set Password:</label>
+                <input type="password" id="signup-password" name="password" required>
+
+                <button type="button" onclick="createAccount()">Create Account</button>
+            </form>
+            <div id="signup-confirmation" class="confirmation-message">
+                Account created successfully!
+            </div>
+        </div>
+
+        <!-- Login Form -->
+        <div id="login-form" class="form-container" style="display: none;">
+            <h2>Login</h2>
+            <form>
+                <label for="login-username">Username:</label>
+                <input type="text" id="login-username" name="username" required>
+
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="password" required>
+s
+                <button type="button" onclick="login()">Login</button>
+            </form>
+            <div id="login-confirmation" class="confirmation-message">
+                Login successful!
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function showForm(form) {
+            // Toggle active button styles
+            document.getElementById('signup-btn').classList.remove('active');
+            document.getElementById('login-btn').classList.remove('active');
+            document.getElementById(`${form}-btn`).classList.add('active');
+
+            // Show/hide forms
+            document.getElementById('signup-form').style.display = form === 'signup' ? 'block' : 'none';
+            document.getElementById('login-form').style.display = form === 'login' ? 'block' : 'none';
+        }
+
+        function createAccount() {
+            const username = document.getElementById('signup-username').value;
+            const password = document.getElementById('signup-password').value;
+
+            if (username && password) {
+                document.getElementById('signup-confirmation').style.display = 'block';
+
+                setTimeout(() => {
+                    document.getElementById('signup-form').reset();
+                    document.getElementById('signup-confirmation').style.display = 'none';
+                }, 2000);
+            } else {
+                alert('Please fill out all fields.');
+            }
+        }
+
+        function login() {
+            const username = document.getElementById('login-username').value;
+            const password = document.getElementById('login-password').value;
+
+            if (username && password) {
+                document.getElementById('login-confirmation').style.display = 'block';
+
+                setTimeout(() => {
+                    document.getElementById('login-form').reset();
+                    document.getElementById('login-confirmation').style.display = 'none';
+                }, 2000);
+            } else {
+                alert('Please fill out all fields.');
+            }
+        }
+    </script>
+</body>
+</html>
